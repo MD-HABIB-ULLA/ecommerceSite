@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const Slide = ({ image, text, discountPercent, saleText }) => {
     return (
         <motion.div
-            className='w-full bg-center bg-cover h-[400px] md:h-[38rem] relative'
+            className='w-full bg-center bg-cover h-[400px] md:h-[38rem] relative '
             style={{
                 backgroundImage: `url(${image})`,
             }}
