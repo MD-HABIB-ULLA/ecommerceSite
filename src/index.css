@@ -19,3 +19,11 @@
       }
  
 }
+.drawer-side > *:not(.drawer-overlay) {
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 300ms;
+    will-change: transform;
+    transform: translateY(-100%);
+}
