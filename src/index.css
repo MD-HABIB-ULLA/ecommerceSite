@@ -1,8 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .manRope {
-    font-family: "Manrope", sans-serif;
+  font-family: "Manrope", sans-serif;
+}
+
+@media (min-width: 870px) {
+  .hide {
+    display: block;
+  }
+ 
+}
+@media (max-width: 870px) {
+    .center {
+        justify-content: center;
+      }
+ 
 }
