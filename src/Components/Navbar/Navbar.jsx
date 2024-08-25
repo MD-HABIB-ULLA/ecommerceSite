@@ -1,10 +1,18 @@
-import React from 'react';
-import { FaMapMarkerAlt, FaUsers, FaTruck, FaInfoCircle, FaPhone, FaClipboardList, FaGlasses, FaUser, FaHeart } from 'react-icons/fa';
+import React, { useState } from 'react';
+import { FaMapMarkerAlt, FaUsers, FaTruck, FaInfoCircle, FaPhone, FaClipboardList, FaSearch, FaBars } from 'react-icons/fa';
 import { CiHeart, CiSearch, CiUser } from "react-icons/ci";
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { BsBoxSeam } from "react-icons/bs";
 
 const Navbar = () => {
+
+    const [position, setposition] = useState(true)
+
+    const toggleHandel = () => {
+        set
+    }
+
+
     return (
         <div className='manRope '>
             <div className=' flex justify-evenly  text-[#808080] border-b-2 py-3'>
@@ -31,7 +39,7 @@ const Navbar = () => {
 
                 <div className='md:flex hidden items-center'>
                     <input type="text" className='p-3 border-gray-200 text-gray-900 outline-none border-2 ' placeholder='Find our seach' />
-                    <button className='p-4 border-2 text-white flex justify-center items-center text-center bg-[#333333]  hover:bg-[#F14772] text-xl'><CiSearch /></button>
+                    <button className='p-4 border-2 text-white flex justify-center items-center text-center bg-[#333333]  hover:bg-[#F14772] text-xl font-extrabold'><FaSearch /></button>
                 </div>
 
                 <div className='text-2xl font-bold'>
@@ -61,6 +69,7 @@ const Navbar = () => {
             </div>
 
             {/* Second Navabr Ends */}
+
 
 
         </div>
