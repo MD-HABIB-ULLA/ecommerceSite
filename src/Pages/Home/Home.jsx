@@ -9,14 +9,14 @@ const Home = () => {
     return (
         <div>
 
-            <div className='flex manRope justify-center gap-5 items-center'>
+            <div className='max-w-7xl m-auto grid grid-cols-4 '>
                 <Categories />
 
-                <div className='w-full md:w-1/2 my-5'>
+                <div className= 'col-span-2 w-full '>
                     <Banner />
                 </div>
                 <div>
-                    <img className='md:flex hidden h-[600px]' src="https://qx-elesa-demo1.myshopify.com/cdn/shop/files/offer-banner.jpg?v=1718768737&width=832" alt="" />
+                    <img className='md:flex hidden ' src="https://qx-elesa-demo1.myshopify.com/cdn/shop/files/offer-banner.jpg?v=1718768737&width=832" alt="" />
                 </div>
             </div>
             <h1>This is Home page</h1>

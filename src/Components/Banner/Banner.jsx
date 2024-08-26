@@ -18,7 +18,7 @@ const Banner = () => {
 
     const shouldLoop = slides.length > 2;
     return (
-        <div className='container px-2 rounded-2xl py-10 mx-auto'>
+        <div className=' px-2 rounded-2xl  mx-auto bg-red-500'>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
