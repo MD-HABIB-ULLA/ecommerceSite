@@ -18,7 +18,7 @@ const Banner = () => {
 
     const shouldLoop = slides.length > 2;
     return (
-        <div className='container px-2 rounded-2xl py-10 mx-auto'>
+        <div className='h-full rounded-2xl  mx-auto  overflow-hidden'>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
@@ -30,13 +30,12 @@ const Banner = () => {
                 pagination={{
                     clickable: true,
                 }}
-                navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
-                className='mySwiper '
+                className='mySwiper h-full'
             >
                 {slides.map(slide => (
-                    <SwiperSlide key={slide._id}>
-                        <Slide image={slide.url} text={slide.title} saleText={slide.saleText} discountPercent={slide.discountPercent} />
+                    <SwiperSlide className='h-full' key={slide._id}>
+                        <Slide  image={slide.url} text={slide.title} saleText={slide.saleText} discountPercent={slide.discountPercent} />
                     </SwiperSlide>
                 ))}
             </Swiper>
