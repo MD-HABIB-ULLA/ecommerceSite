@@ -178,17 +178,17 @@ const Navbar = () => {
         </div>
       </div>
       {/* Third section of navbar  */}
-      <div className="bg-gradient-to-r from-[#435EF9] to-[#F14772]">
+      <div className="bg-gradient-to-r from-[#435EF9] to-[#F14772] lg:block hidden">
         <div className="max-w-7xl m-auto md:px-10 px-5 py-5 text-white text-xl mb-4 grid grid-cols-4">
           <div className="text-white flex items-center gap-2 ">
             <FaHeadphonesAlt /> <p className="font-bold">+88012345678</p>
           </div>
-          <div className=" flex justify-between items-center gap2 col-span-2 divide-x-2">
-            <p className="text-center"> Bluetooth</p>
-            <p className="text-center pl-4"> Earphones</p>
-            <p className="text-center pl-4">Laptop</p>
-            <p className="text-center pl-4">Controller</p>
-            <p className="text-center pl-4">Smartphone</p>
+          <div className=" flex justify-center items-center  col-span-2 divide-x-2 text-sm">
+            <p className="text-center px-4 cursor-pointer"> Bluetooth</p>
+            <p className="text-center px-4 cursor-pointer"> Earphones</p>
+            <p className="text-center px-4 cursor-pointer">Laptop</p>
+            <p className="text-center px-4 cursor-pointer">Controller</p>
+            <p className="text-center px-4 cursor-pointer">Smartphone</p>
           </div>
           <div className="text-right gap-2 ">
             <p className="font-bold">+88012345678</p>
