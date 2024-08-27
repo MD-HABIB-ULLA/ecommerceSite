@@ -11,8 +11,9 @@ import {
   FaHeart,
   FaInstagram,
   FaSearch,
+  FaHeadphonesAlt,
 } from "react-icons/fa";
-import { CiHeart, CiSearch, CiUser } from "react-icons/ci";
+import { CiHeadphones, CiHeart, CiSearch, CiUser } from "react-icons/ci";
 import { Link, NavLink } from "react-router-dom";
 import { BsBoxSeam } from "react-icons/bs";
 import { FaMagnifyingGlass } from "react-icons/fa6";
@@ -82,13 +83,13 @@ const Navbar = () => {
           <div className="grid lg:grid-cols-3 grid-cols-2 w-full ">
             {/* first section  */}
             <div className="lg:block hidden">
-              <div className="flex h-12 items-center">
+              <div className="flex h-12 items-center ">
                 <input
                   type="text"
-                  className="h-full px-3 border-gray-200 text-gray-900 outline-none border-y border-l "
+                  className="h-full px-3 border-gray-200 rounded-l-lg text-gray-900 outline-none border-y border-l "
                   placeholder="Find our seach"
                 />
-                <button className="h-full px-4 text-white flex justify-center items-center text-center bg-[#333333]  hover:bg-[#F14772] text-xl duration-500">
+                <button className="h-full px-4 rounded-r-lg text-white flex justify-center items-center text-center bg-[#333333]  hover:bg-[#F14772] text-xl duration-500">
                   <FaMagnifyingGlass />
                 </button>
               </div>
@@ -177,8 +178,22 @@ const Navbar = () => {
         </div>
       </div>
       {/* Third section of navbar  */}
-      <div className="">
-        <div className="max-w-7xl m-auto md:px-10 px-5"></div>
+      <div className="bg-gradient-to-r from-[#435EF9] to-[#F14772] lg:block hidden">
+        <div className="max-w-7xl m-auto md:px-10 px-5 py-5 text-white text-xl mb-4 grid grid-cols-4">
+          <div className="text-white flex items-center gap-2 ">
+            <FaHeadphonesAlt /> <p className="font-bold">+88012345678</p>
+          </div>
+          <div className=" flex justify-center items-center  col-span-2 divide-x-2 text-sm">
+            <p className="text-center px-4 cursor-pointer"> Bluetooth</p>
+            <p className="text-center px-4 cursor-pointer"> Earphones</p>
+            <p className="text-center px-4 cursor-pointer">Laptop</p>
+            <p className="text-center px-4 cursor-pointer">Controller</p>
+            <p className="text-center px-4 cursor-pointer">Smartphone</p>
+          </div>
+          <div className="text-right gap-2 ">
+            <p className="font-bold">+88012345678</p>
+          </div>
+        </div>
       </div>
     </div>
     // <div className='manRope '>
