@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Categories = () => {
     return (
-        <div className='h-full'>
+        <div className='h-full lg:block hidden'>
         <div className='hidden md:flex h-full'>
           <div className='border-2 border-[#e6e6e6] flex flex-col text-black w-full h-full  rounded-2xl overflow-hidden '>
             <div className='font-bold p-5 bg-[#e6e6e6] flex-1 flex items-center justify-start'>

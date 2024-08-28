@@ -12,11 +12,13 @@ import {
   FaInstagram,
   FaSearch,
   FaHeadphonesAlt,
+  FaBars,
 } from "react-icons/fa";
 import { CiHeadphones, CiHeart, CiSearch, CiUser } from "react-icons/ci";
 import { Link, NavLink } from "react-router-dom";
 import { BsBoxSeam } from "react-icons/bs";
 import { FaMagnifyingGlass } from "react-icons/fa6";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -179,7 +181,7 @@ const Navbar = () => {
       </div>
       {/* Third section of navbar  */}
       <div className="bg-gradient-to-r from-[#435EF9] to-[#F14772] lg:block hidden">
-        <div className="max-w-7xl m-auto md:px-10 px-5 py-5 text-white text-xl mb-4 grid grid-cols-4">
+        <div className="max-w-7xl m-auto md:px-10 px-5 py-2 text-white text-xl mb-4 grid grid-cols-4">
           <div className="text-white flex items-center gap-2 ">
             <FaHeadphonesAlt /> <p className="font-bold">+88012345678</p>
           </div>
@@ -190,8 +192,21 @@ const Navbar = () => {
             <p className="text-center px-4 cursor-pointer">Controller</p>
             <p className="text-center px-4 cursor-pointer">Smartphone</p>
           </div>
-          <div className="text-right gap-2 ">
-            <p className="font-bold">+88012345678</p>
+          <div className="flex justify-end">
+            <div className="text-right px-3 py-3 = bg-black text-base  rounded-lg ">
+              <p className="font-bold">Spacial Offers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="max-w-7xl md:px-5 px-5 lg:hidden block py-3">
+        <div className="  rounded-lg border-[1px] border-gray-400/15 shadow-sm px-3 py-3 ">
+            <div className="flex items-center justify-between ">
+            <div className="flex items-center gap-2 ">
+              <FaBars />
+              <p>Shop By Categories</p>
+            </div>
+            <MdKeyboardArrowDown />
           </div>
         </div>
       </div>

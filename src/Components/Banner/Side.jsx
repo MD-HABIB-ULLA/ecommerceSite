@@ -15,16 +15,16 @@ const Slide = ({ image, text, discountPercent, saleText }) => {
         >
             <div className='absolute inset-0 top-[10%] md:top-[20%] '>
                 <div className='px-5 text-center'>
-                    <p className='text-lg text-[#333333]'>
+                    <p className='md:text-lg text-base text-[#333333] duration-500'>
                         {saleText} <span className='text-black underline font-bold'>{discountPercent}</span>
                     </p>
-                    <h1 className='text-3xl md:text-5xl font-extrabold text-[#333333] mb-4'>
+                    <h1 className='md:text-3xl text-xl lg:text-5xl font-extrabold duration-500 text-[#333333] mb-4'>
                         {text}
                     </h1>
                     <div className='mt-6'>
                         <Link
                             to='/products'
-                            className='inline-block px-6 py-3 text-white bg-[#282828] text-xl font-bold transition hover:bg-[#ED4877] duration-300 focus:outline-none focus:ring-2 focus:ring-opacity-50'
+                            className='inline-block duration-500 lg:px-6 lg:py-3 md:px-4 md:py-2 px-3 py-2 text-white bg-[#282828] rounded-lg lg:text-xl md:text-lg text-base font-bold transition hover:bg-[#ED4877] duration-300 focus:outline-none focus:ring-2 focus:ring-opacity-50'
                         >
                             Shop Now
                         </Link>
